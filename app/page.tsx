@@ -11,15 +11,22 @@ export default function Home() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-6 px-4 sticky top-16 z-10">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between">
-            <h1 className="text-2xl font-bold">Transmilenio</h1>
-            <span className="text-2xl">🚌</span>
-          </div>
-        </div>
-      </section>
-
+     <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-4 px-4 sticky top-16 z-10">
+  <div className="max-w-7xl mx-auto">
+    <div className="flex items-center justify-between">
+      {/* Logo de la app */}
+      <div className="flex items-center gap-3">
+        <img 
+          src="/logotrasmi.png" 
+          alt="Logo Transmilenio App"
+          className="h-10 w-10" 
+        />
+        <h1 className="text-2xl font-bold">Transmilenio</h1>
+      </div>
+      <span className="text-2xl">🚌</span>
+    </div>
+  </div>
+</section>
       {/* Main Content */}
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Carousel Banner */}

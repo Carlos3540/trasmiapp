@@ -1,70 +1,38 @@
 'use client';
 
 import { stations, lines } from '@/app/(auth)/lib/data';
-import { useEffect, useRef } from 'react';
 
 export default function MapPage() {
-  const mapRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Simular un canvas simple para mostrar estaciones
-    const canvas = mapRef.current?.querySelector('canvas') as HTMLCanvasElement;
-    if (canvas && canvas.getContext) {
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        // Dibujar fondo
-        ctx.fillStyle = '#f5f5f5';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        
-        // Dibujar estaciones
-        stations.forEach((station) => {
-          const x = (station.longitude + 74.1) * 1000;
-          const y = (4.9 - station.latitude) * 1000;
-          ctx.fillStyle = '#FFD700';
-          ctx.beginPath();
-          ctx.arc(x, y, 6, 0, Math.PI * 2);
-          ctx.fill();
-          ctx.strokeStyle = '#333';
-          ctx.lineWidth = 2;
-          ctx.stroke();
-        });
-      }
-    }
-  }, []);
-
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-r from-purple-600 to-purple-700 text-white py-8 px-4">
+           <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-8 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold mb-2">Mapa de Transmilenio</h1>
           <p>Ubicación de estaciones y líneas</p>
         </div>
       </section>
 
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* Map */}
           <div className="lg:col-span-3">
-            <div
-              ref={mapRef}
-              className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-200"
-            >
-              <canvas
-                width={800}
-                height={600}
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden border-2 border-purple-200">
+              {/* IMAGEN CON RUTA CORRECTA */}
+              <img
+                src="/mapatrasmi.jpg"
+                alt="Mapa del Sistema Transmilenio"
                 className="w-full h-auto"
               />
               <div className="p-4 bg-purple-50 text-sm text-gray-600">
-                Mapa interactivo de Transmilenio (Aproximado)
+                Mapa del Sistema Transmilenio
               </div>
             </div>
           </div>
 
-          {/* Sidebar */}
+          {/* Sidebar - mantienes el mismo código */}
           <div className="lg:col-span-1">
-            {/* Estaciones */}
             <div className="card mb-6">
               <h3 className="font-bold text-lg text-gray-900 mb-4">Estaciones</h3>
               <div className="space-y-2 max-h-96 overflow-y-auto">
@@ -86,7 +54,6 @@ export default function MapPage() {
               </div>
             </div>
 
-            {/* Líneas */}
             <div className="card">
               <h3 className="font-bold text-lg text-gray-900 mb-4">Líneas</h3>
               <div className="space-y-3">
@@ -107,7 +74,7 @@ export default function MapPage() {
           </div>
         </div>
 
-        {/* Info Grid */}
+        {/* Info Grid - mantienes el mismo código */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="card text-center">
             <p className="text-3xl mb-2">📍</p>

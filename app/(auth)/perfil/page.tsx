@@ -18,7 +18,7 @@ export default function ProfilePage() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-r from-indigo-600 to-indigo-700 text-white py-8 px-4">
+       <section className="bg-gradient-to-r from-red-600 to-red-700 text-white py-8 px-4">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl font-bold mb-2">Mi Perfil</h1>
           <p>Gestiona tu cuenta y tarjeta de Transmilenio</p>
@@ -30,10 +30,10 @@ export default function ProfilePage() {
           {/* Main Content */}
           <div className="lg:col-span-2">
             {/* User Info Card */}
-            <div className="card mb-6">
+                      <div className="bg-white rounded-lg shadow-md p-6 mb-6 border border-gray-200">
               <div className="flex justify-between items-start mb-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 bg-indigo-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                  <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
                     👤
                   </div>
                   <div>
@@ -74,7 +74,7 @@ export default function ProfilePage() {
               <div
                 className="rounded-lg p-8 text-white relative overflow-hidden"
                 style={{
-                  background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                  background: 'linear-gradient(135deg, #ff002bff 0%, #a24b4eff 100%)',
                 }}
               >
                 <div className="absolute top-4 right-4 text-2xl">💳</div>
