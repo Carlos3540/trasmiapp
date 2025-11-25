@@ -1,6 +1,6 @@
 'use client';
 
-import { stations } from '@/app/lib/data';
+import { stations } from '@/app/(auth)/lib/data';
 import { useState } from 'react';
 
 interface SearchRouteProps {

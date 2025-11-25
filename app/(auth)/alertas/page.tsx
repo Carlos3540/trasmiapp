@@ -1,6 +1,6 @@
 'use client';
 
-import { alerts } from '@/app/lib/data';
+import { alerts } from '@/app/(auth)/lib/data';
 
 export default function AlertsPage() {
   const getAlertColor = (type: 'info' | 'warning' | 'danger') => {

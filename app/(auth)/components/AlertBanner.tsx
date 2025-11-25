@@ -1,6 +1,6 @@
 'use client';
 
-import { alerts } from '@/app/lib/data';
+import { alerts } from '@/app/(auth)/lib/data';
 
 export default function AlertBanner() {
   const activeAlerts = alerts.slice(0, 2);

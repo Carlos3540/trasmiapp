@@ -1,6 +1,6 @@
 'use client';
 
-import TroncalZones from '@/app/components/TroncalZones';
+import TroncalZones from '@/app/(auth)/components/TroncalZones';
 import { useState } from 'react';
 
 export default function RoutesPage() {

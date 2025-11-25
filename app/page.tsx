@@ -1,11 +1,11 @@
 'use client';
 
-import CarouselBanner from './components/CarouselBanner';
-import MainMenu from './components/MainMenu';
-import NearbyStations from './components/NearbyStations';
-import PlanJourneyButton from './components/PlanJourneyButton';
-import TroncalZones from './components/TroncalZones';
-import AlertBanner from './components/AlertBanner';
+import CarouselBanner from './(auth)/components/CarouselBanner';
+import MainMenu from './(auth)/components/MainMenu';
+import NearbyStations from './(auth)/components/NearbyStations';
+import PlanJourneyButton from './(auth)/components/PlanJourneyButton';
+import TroncalZones from './(auth)/components/TroncalZones';
+import AlertBanner from './(auth)/components/AlertBanner';
 
 export default function Home() {
   return (

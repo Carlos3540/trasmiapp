@@ -1,6 +1,6 @@
 'use client';
 
-import { Route } from '@/app/lib/data';
+import { Route } from '@/app/(auth)/lib/data';
 import Link from 'next/link';
 
 interface RouteCardProps {

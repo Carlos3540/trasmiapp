@@ -1,6 +1,6 @@
 'use client';
 
-import { stations, lines } from '@/app/lib/data';
+import { stations, lines } from '@/app/(auth)/lib/data';
 import { useEffect, useRef } from 'react';
 
 export default function MapPage() {

@@ -1,6 +1,6 @@
 'use client';
 
-import { routes } from '@/app/lib/data';
+import { routes } from '@/app/(auth)/lib/data';
 import { notFound } from 'next/navigation';
 
 export default function RouteDetailPage({ params }: { params: { id: string } }) {

@@ -1,6 +1,6 @@
 'use client';
 
-import FAQ from '@/app/components/FAQ';
+import FAQ from '@/app/(auth)/components/FAQ';
 
 export default function SupportPage() {
   return (

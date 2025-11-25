@@ -1,6 +1,6 @@
 'use client';
 
-import { lines } from '@/app/lib/data';
+import { lines } from '@/app/(auth)/lib/data';
 
 export default function LinesList() {
   return (
